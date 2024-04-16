@@ -20,17 +20,12 @@ biblioteca = {
 }
 
 function addNewBook(Title, Author, Gender, PublicationYear) {
-    biblioteca[Title] = {'Author': Author, 'Gender': Gender, 'PublicationYear': PublicationYear}
+    biblioteca.Books[Title] = {'Author': Author, 'Gender': Gender, 'PublicationYear': PublicationYear}
 
-    // retorna undefined
 }
 
 function showBooks() {
     console.log(biblioteca.Books)
 
-    // retorna undefined
 }
 
-console.log(addNewBook("O Pequeno Principe", "Saint Exupery", "Ficção", "1998"))
-
-console.log(showBooks())
