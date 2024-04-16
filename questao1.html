@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: #fff;
+            text-align: center;
+        }
+
+        nav {
+            border-radius: 25px;
+            margin-top: 10px;
+            margin-bottom: 50px;
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            background: #161616;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px; 
+        }
+
+        section {
+            display: flex;
+            flex-direction: row;
+        
+        }
+
+        header {
+            border-radius: 25px;
+            height: 200px;
+            background: #161616;
+            flex: 1 1 auto; 
+            margin-bottom: 20px;
+        }
+
+        aside {
+            border-radius: 25px;
+            height: 475px;
+            background: #161616;
+            flex: 0 0 200px; 
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            flex: 1 1 auto; 
+        }
+
+        section div {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        section div p {
+            border-radius: 25px;
+            width: calc(50% - 10px); 
+            height: 250px;
+            background: #161616;
+        }
+
+        footer {
+            border-radius: 25px;
+            margin-top: 10px;
+            margin-bottom: 50px;
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            background: #161616;
+        }
+
+        @media screen and (max-width: 500px) {
+            aside {
+                display: none;
+            }
+
+            header, section {``
+                width: 100%; 
+            }
+
+            section div p {
+                width: 45%;
+               
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav> Nav </nav>
+    <main>
+        
+        <section>
+            <header> Header </header>
+            <div>
+                <p> Section 1 </p>
+                <p> Section 2 </p>
+            </div>
+        </section>
+        <aside> Aside </aside>
+    </main>
+    <footer> Footer </footer>
+</body>
+</html>
